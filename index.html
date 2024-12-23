@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James Antony Raj Portfolio </title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-y: auto; /* Enable vertical scrolling */
+      font-family: Arial, sans-serif;
+      background: #000000;
+    }
+
+
+	
+    .portfolio-container {
+	  position: relative;
+	  top: 3px;
+	  height: 50%;
+	  text-align: center;
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+	/* Portfolio container with animated multi-gradient border */
+.portfolio-container {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Animated border */
+/* Portfolio container with animated multi-gradient border and border radius */
+.portfolio-container {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Animated border with rounded corners */
+.portfolio-container:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(45deg, 
+    #ff007f, #00ffff, #ffbf00, #8a2be2, #ff007f);
+  background-size: 300% 300%;
+  border-radius: 20px; /* Larger radius to match the container */
+  animation: gradient-border-radius 6s infinite;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradient-border-radius {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+	/* Neon border effect */
+.certification-slider img {
+  border: 5px solid transparent; /* Base border */
+  animation: neon-border 5s infinite; /* Animation for neon effect */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Keyframes for the neon border animation */
+@keyframes neon-border {
+  0% {
+    border-color: #ff007f;
+    box-shadow: 0 0 15px #ff007f, 0 0 30px #ff007f, 0 0 45px #ff007f;
+  }
+  25% {
+    border-color: #00ffff;
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff, 0 0 45px #00ffff;
+  }
+  50% {
+    border-color: #ffbf00;
+    box-shadow: 0 0 15px #ffbf00, 0 0 30px #ffbf00, 0 0 45px #ffbf00;
+  }
+  75% {
+    border-color: #8a2be2;
+    box-shadow: 0 0 15px #8a2be2, 0 0 30px #8a2be2, 0 0 45px #8a2be2;
+  }
+  100% {
+    border-color: #ff007f;
+    box-shadow: 0 0 15px #ff007f, 0 0 30px #ff007f, 0 0 45px #ff007f;
+  }
+}
+
+
+
+	.cse-picture {
+      position: relative;
+      top: -50px;
+      right: -130px;
+      width: 130px; /* Adjust the size of your profile picture */
+      height: 140px;
+	  border-radius: 10%;
+      box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+    }
+
+	.clinical-picture {
+      position: relative;
+      top: -50px;
+      right: -170px;
+      width: 130px; /* Adjust the size of your profile picture */
+      height: 140px;
+	  border-radius: 10%;
+      box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+    }
+
+	.portfolio-container h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem; /* Adjust as needed */
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(45deg, #ffffff, #00ffff, #ffffff, #6feeee, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari compatibility */
+  color: transparent; /* Makes the gradient visible */
+  animation: gradient-text 6s infinite;
+}
+
+@keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+    .portfolio-container a {
+      display: inline-block;
+	  top:60px;
+	  right: 80px;
+      margin: 80px;
+      padding: 5px 10px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+	  position: relative;
+    }
+
+	
+    .portfolio-container a.be-cse {
+      background: #007bff;
+	  
+    }
+    .portfolio-container a.be-cse:hover {
+      background: #c3ff00;
+    }
+    .portfolio-container a.clinical {
+      background: #28a745;
+    }
+    .portfolio-container a.clinical:hover {
+      background: #ff7700;
+    }
+    .certification-slider {
+      width: 80%;
+	  right: -500px;
+      max-width: 300px;
+      position: relative;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding-top: 10px;
+      padding-bottom:10px;
+	  
+	}
+    .certification-slider img {
+      width: 80%;
+      height: auto;
+      display: none;
+      opacity: 0;
+      transition: opacity 3s ease-in-out;
+    }
+    .certification-slider img.active {
+      display: block;
+      opacity: 1;
+    }
+    
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: #333;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .arrow.left {
+      left: 10px;
+    }
+    .arrow.right {
+      right: 10px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+    }
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+    .modal .controls {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .modal button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .profile-picture {
+  position: relative;
+  top: 10px;
+  right: -540px;
+  width: 150px; /* Adjust the size of your profile picture */
+  height: 150px;
+  border-radius: 50%; /* Circular shape */
+  border: 3px solid transparent; /* Transparent border to allow glow effect */
+  background: linear-gradient(white, white) padding-box, 
+              linear-gradient(45deg, #ff007f, #00ffff, #ffbf00, #8a2be2, #ff007f) border-box;
+  animation: neon-border 6s infinite;
+  box-shadow: 0 4px 6px rgba(251, 255, 24, 0.792);
+  cursor: pointer;
+  overflow: hidden; /* Ensures image stays within the circular border */
+}
+
+@keyframes neon-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+    /* Gradient and glow effect for certificate slides */
+    .certification-slider  img:nth-child(1) {
+      background: linear-gradient(45deg, #ff7f50, #ff6347);
+      box-shadow: 0 0 15px rgba(255, 99, 71, 0.7);
+    }
+    .certification-slider  img:nth-child(2) {
+      background: linear-gradient(45deg, #8a2be2, #7b68ee);
+      box-shadow: 0 0 15px rgba(138, 43, 226, 0.7);
+    }
+    .certification-slider  img:nth-child(3) {
+      background: linear-gradient(45deg, #3cb371, #2e8b57);
+      box-shadow: 0 0 15px rgba(60, 179, 113, 0.7);
+    }
+    .certification-slider  img:nth-child(4) {
+      background: linear-gradient(45deg, #ffd700, #f0e68c);
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+    }
+    .certification-slider  img:nth-child(5) {
+      background: linear-gradient(45deg, #00bfff, #1e90ff);
+      box-shadow: 0 0 15px rgba(0, 191, 255, 0.7);
+    }
+    .certification-slider  img:nth-child(6) {
+      background: linear-gradient(45deg, #ff1493, #ff69b4);
+      box-shadow: 0 0 15px rgba(255, 20, 147, 0.7);
+    }
+    .certification-slider  img:nth-child(7) {
+      background: linear-gradient(45deg, #ff6347, #ff4500);
+      box-shadow: 0 0 15px rgba(255, 99, 71, 0.7);
+    }
+    .certification-slider  img:nth-child(8) {
+      background: linear-gradient(45deg, #ff1493, #c71585);
+      box-shadow: 0 0 15px rgba(255, 20, 147, 0.7);
+    }
+    .certification-slider  img:nth-child(9) {
+      background: linear-gradient(45deg, #ff8c00, #ff4500);
+      box-shadow: 0 0 15px rgba(255, 140, 0, 0.7);
+    }
+
+    /* Wipe transition for certificate slides */
+    .certification-slider img {
+      animation: wipe-in 3s ease-out forwards;
+    }
+
+    @keyframes wipe-in {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Profile Picture at the top-right corner -->
+  <img src="certificates/profile.jpg" alt="Profile Picture" class="profile-picture" id="profilePic">
+
+  <div class="portfolio-container">
+    <h1>JAMES ANTONY RAJ Portfolio's</h1>
+	<img src="certificates/cse.jpg" alt="Profile Picture" class="cse-picture" id="cse-picture">
+    <a href="BE-CSE.html" class="be-cse" target="_blank">BE-CSE Profile</a>
+	<img src="certificates/Statistical.jpg" alt="Profile Picture" class="clinical-picture" id="clinical-picture">
+    <a href="clinical-research.html" class="clinical" target="_blank">Clinical Research Profile</a>
+  </div>
+
+  <div class="certification-slider">
+    <div class="arrow left">&lt;</div>
+    <div class="arrow right">&gt;</div>
+    <img src="certificates/cert1.jpg" alt="Certification 1" class="active">
+    <img src="certificates/cert2.jpg" alt="Certification 2">
+    <img src="certificates/cert3.jpg" alt="Certification 3">
+    <img src="certificates/cert4.jpg" alt="Certification 4">
+    <img src="certificates/cert5.jpg" alt="Certification 5">
+    <img src="certificates/cert6.jpg" alt="Certification 6">
+    <img src="certificates/cert7.jpg" alt="Certification 7">
+    <img src="certificates/cert8.jpg" alt="Certification 8">
+    <img src="certificates/cert9.jpg" alt="Certification 9">
+  </div>
+
+  <div class="modal" id="modal">
+    <img src="" alt="Full View">
+    <div class="controls">
+      <button id="download">Download</button>
+      <button id="zoomIn">Zoom In</button>
+      <button id="zoomOut">Zoom Out</button>
+      <button id="close">Close</button>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.certification-slider img');
+    const leftArrow = document.querySelector('.arrow.left');
+    const rightArrow = document.querySelector('.arrow.right');
+    const modal = document.getElementById('modal');
+    const modalImg = modal.querySelector('img');
+    const downloadBtn = document.getElementById('download');
+    const zoomInBtn = document.getElementById('zoomIn');
+    const zoomOutBtn = document.getElementById('zoomOut');
+    const closeModalBtn = document.getElementById('close');
+    const profilePic = document.getElementById('profilePic');
+
+    let currentIndex = 0;
+    let zoomLevel = 1;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    // Open modal on profile picture click
+    profilePic.addEventListener('click', () => {
+      const profileModal = document.createElement('div');
+      profileModal.classList.add('modal');
+      profileModal.innerHTML = `<img src="${profilePic.src}" alt="Profile Large">`;
+      document.body.appendChild(profileModal);
+      profileModal.style.display = 'flex';
+      profileModal.addEventListener('click', () => {
+        document.body.removeChild(profileModal);
+      });
+    });
+
+    // Open modal for certificate image
+    function openModal(src) {
+      modal.style.display = 'flex';
+      modalImg.src = src;
+      zoomLevel = 1;
+      modalImg.style.transform = `scale(${zoomLevel})`;
+    }
+
+    // Close modal
+    function closeModal() {
+      modal.style.display = 'none';
+    }
+
+    // Zoom in and out
+    function zoomIn() {
+      zoomLevel += 0.1;
+      modalImg.style.transform = `scale(${zoomLevel})`;
+    }
+
+    function zoomOut() {
+      zoomLevel = Math.max(zoomLevel - 0.1, 0.5);
+      modalImg.style.transform = `scale(${zoomLevel})`;
+    }
+
+    // Event listeners for certificate slides
+    slides.forEach(slide => {
+      slide.addEventListener('click', () => openModal(slide.src));
+    });
+
+    // Event listeners for arrows
+    leftArrow.addEventListener('click', prevSlide);
+    rightArrow.addEventListener('click', nextSlide);
+
+    // Close modal button
+    closeModalBtn.addEventListener('click', closeModal);
+
+    // Zoom in/out buttons
+    zoomInBtn.addEventListener('click', zoomIn);
+    zoomOutBtn.addEventListener('click', zoomOut);
+
+    // Download button for modal image
+    downloadBtn.addEventListener('click', () => {
+      const link = document.createElement('a');
+      link.href = modalImg.src;
+      link.download = 'certification.jpg';
+      link.click();
+    });
+
+    // Auto slide every 4 seconds
+    setInterval(nextSlide, 4000);
+  </script>
+</body>
+</html>
+
+
+
